@@ -38,6 +38,24 @@ class ExpressServer {
 			this.app.get('/addSeptember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addSeptember.html')));
 			this.app.get('/editSeptember', (req, res) => res.sendFile(path.join(__dirname,'html','editSeptember.html')));
 			this.app.get('/editSeptember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editSeptember.html')));
+			this.app.get('/October', (req, res) => res.sendFile(path.join(__dirname,'html','October.html')));
+			this.app.get('/October/:id', (req, res) => res.sendFile(path.join(__dirname,'html','October.html')));
+			this.app.get('/addOctober', (req, res) => res.sendFile(path.join(__dirname,'html','addOctober.html')));
+			this.app.get('/addOctober/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addOctober.html')));
+			this.app.get('/editOctober', (req, res) => res.sendFile(path.join(__dirname,'html','editOctober.html')));
+			this.app.get('/editOctober/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editOctober.html')));
+			this.app.get('/November', (req, res) => res.sendFile(path.join(__dirname,'html','November.html')));
+			this.app.get('/November/:id', (req, res) => res.sendFile(path.join(__dirname,'html','November.html')));
+			this.app.get('/addNovember', (req, res) => res.sendFile(path.join(__dirname,'html','addNovember.html')));
+			this.app.get('/addNovember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addNovember.html')));
+			this.app.get('/editNovember', (req, res) => res.sendFile(path.join(__dirname,'html','editNovember.html')));
+			this.app.get('/editNovember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editNovember.html')));
+			this.app.get('/December', (req, res) => res.sendFile(path.join(__dirname,'html','December.html')));
+			this.app.get('/December/:id', (req, res) => res.sendFile(path.join(__dirname,'html','December.html')));
+			this.app.get('/addDecember', (req, res) => res.sendFile(path.join(__dirname,'html','addDecember.html')));
+			this.app.get('/addDecember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addDecember.html')));
+			this.app.get('/editDecember', (req, res) => res.sendFile(path.join(__dirname,'html','editDecember.html')));
+			this.app.get('/editDecember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editDecember.html')));
 			
     }
   
