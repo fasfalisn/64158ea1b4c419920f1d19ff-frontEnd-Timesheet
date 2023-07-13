@@ -15,7 +15,7 @@ let apiAugustApi = new TempApi.AugustApi();import TempApi from '../src/index';le
         document.querySelector('[annotationname = employee]').setAttribute('selected-element',response.body.query.employee.userName);document.dispatchEvent(new Event("alignemployee"));
         const insideSubdocument = document.querySelector("[annotationname = 'employee']");
         if (insideSubdocument !==null) {
-           try {const attributeSubdocumentElement = insideSubdocument.querySelector("[annotationname = 'userName']"); if (attributeSubdocumentElement !== null) { attributeSubdocumentElement.textContent = response.body.query.employee.userName;}} catch (e) {console.log(e);};
+           
         }
       if(response.body.query.employee._id){
         map.set(

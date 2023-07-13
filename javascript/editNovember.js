@@ -17,7 +17,7 @@ let apiNovemberApi = new TempApi.NovemberApi();import TempApi from '../src/index
         document.querySelector('[annotationname = employeeNov]').setAttribute('selected-element',response.body.query.employeeNov.userName);document.dispatchEvent(new Event("alignemployeeNov"));
         const insideSubdocument = document.querySelector("[annotationname = 'employeeNov']");
         if (insideSubdocument !==null) {
-           try {const attributeSubdocumentElement = insideSubdocument.querySelector("[annotationname = 'userName']"); if (attributeSubdocumentElement !== null) { attributeSubdocumentElement.textContent = response.body.query.employeeNov.userName;}} catch (e) {console.log(e);};
+           
         }
       if(response.body.query.employeeNov._id){
         map.set(
