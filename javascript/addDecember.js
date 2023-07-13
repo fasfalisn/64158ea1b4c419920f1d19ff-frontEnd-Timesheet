@@ -7,9 +7,9 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';let ap
     !array.reduce((hasAncestorFlag, dataItem) => hasAncestorFlag || (element.compareDocumentPosition(dataItem) & Node.DOCUMENT_POSITION_CONTAINS) === 8, false)
   );const map = new Map();
     if( data.length > subDataElements.length){
-      for(let i = 0; i <=  data.length - subDataElements.length; i++){
+      for(let i = 0; data.length > subDataElements.length; i++){
         let parentNode = subDataElements[0].parentNode;
-        let child = parentNode.childNodes[0].cloneNode(true);
+        let child = subDataElements[0].cloneNode(true)
         parentNode.appendChild(child);
         subDataElements.push(child);
       }
