@@ -384,15 +384,7 @@ let apiAugustApi = new TempApi.AugustApi();import TempApi from '../src/index';do
           parentId = key;
         }
       });
-     location.href= '/editAugust/' + transitionId;}};document.getElementById('ih8b89b').onclick = (event) => {
-    event.preventDefault();
-    { window.document.location = 'https://www.facebook.com/vilabs.eu/';}};document.getElementById('i31lczs').onclick = (event) => {
-    event.preventDefault();
-    { window.document.location = 'https://twitter.com/vilabs_eu';}};document.getElementById('ioxz28l').onclick = (event) => {
-    event.preventDefault();
-    { window.document.location = 'https://gr.linkedin.com/company/vilabs';}};document.getElementById('ibn4o15').onclick = (event) => {
-    event.preventDefault();
-    { window.document.location = 'https://wabli.eu/';}};window.onload = () => {apiAugustApi.getAllaugust((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("i3iw").querySelectorAll( "[dataitem='true']" )].filter(
+     location.href= '/editAugust/' + transitionId;}};window.onload = () => {apiAugustApi.getAllaugust((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("i3iw").querySelectorAll( "[dataitem='true']" )].filter(
     (element, index, array) =>
     !array.reduce((hasAncestorFlag, dataItem) => hasAncestorFlag || (element.compareDocumentPosition(dataItem) & Node.DOCUMENT_POSITION_CONTAINS) === 8, false)
   );const map = new Map();  data.forEach((item,i) => {
