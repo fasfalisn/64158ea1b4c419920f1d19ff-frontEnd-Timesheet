@@ -1,6 +1,8 @@
 let apiWorkpackageApi = new TempApi.WorkpackageApi();import TempApi from '../src/index';document.getElementById('iwylau').onclick = (event) => {
     event.preventDefault();
-    {   location.href= '/August' ;}};document.getElementById('igbhu').onclick = (event) => {
+    {   location.href= '/August' ;}};document.getElementById('iuj19x').onclick = (event) => {
+    event.preventDefault();
+    {   location.href= '/Home' ;}};document.getElementById('igbhu').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);

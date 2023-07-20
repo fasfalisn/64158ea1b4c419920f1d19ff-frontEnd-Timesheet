@@ -1,6 +1,41 @@
 let apiMonthApi = new TempApi.MonthApi();import TempApi from '../src/index';let apiDayApi = new TempApi.DayApi();document.getElementById('ikhu2').onclick = (event) => {
     event.preventDefault();
-    { history.back(); }};document.addEventListener('alignmonthDay', function(e) {
+    { history.back(); }};let arrayiw5hk = [];
+document.getElementById("ipbua").onclick = event => {
+  event.preventDefault();
+  const select = document.getElementById("icmic")
+  arrayiw5hk.push({
+      value: select.value,
+      liValue: select.selectedOptions[0].textContent
+  });
+  select.value = "";
+  select.selectedIndex = 0;
+  refreshULinoen();
+};
+
+function refreshULinoen() {
+let e=``;
+for (let y=0; y<arrayiw5hk.length; y++)
+ {
+   e += `<li index='${y}' arrayvalue='${arrayiw5hk[y].value}'><p style="display: inline-block">${arrayiw5hk[y].liValue}</p><button class="btn pointer bi bi-trash delete-btn" style="display: inline-block;float: right;background-color: red;color: white;" index='${y}'>&nbsp;Delete</button></li>`;
+ }
+document.getElementById("inoen").innerHTML = e;
+}
+
+document.getElementById("inoen").addEventListener("click", event => {
+  event.preventDefault();
+  arrayiw5hk = arrayiw5hk.filter(
+    (item, index) => +event.target.getAttribute("index") !== index
+  );
+  refreshULinoen();
+});
+function initializearrayiw5hk(data) {
+  arrayiw5hk = data.map(item => ({
+    value: item._id,
+    liValue: item['dayId']
+  }));
+}
+document.addEventListener('alignmonthDay', function(e) {
   const advanceSelect = document.getElementById('icmic');
   const selectedElement = advanceSelect.getAttribute('selected-element');
   if (!selectedElement) return;
@@ -77,7 +112,7 @@ let apiMonthApi = new TempApi.MonthApi();import TempApi from '../src/index';let 
         "data",
         JSON.stringify(Array.from(currentData.entries()))
     );
-    }});apiDayApi.getAllday((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("iw5hk").querySelectorAll( "[dataitem='true']" )].filter(
+    }});apiDayApi.getAllday((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("ia2q1").querySelectorAll( "[dataitem='true']" )].filter(
     (element, index, array) =>
     !array.reduce((hasAncestorFlag, dataItem) => hasAncestorFlag || (element.compareDocumentPosition(dataItem) & Node.DOCUMENT_POSITION_CONTAINS) === 8, false)
   );const map = new Map();

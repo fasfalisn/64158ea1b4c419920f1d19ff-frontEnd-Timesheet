@@ -1,6 +1,8 @@
 let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';document.getElementById('iwylau').onclick = (event) => {
     event.preventDefault();
-    {   location.href= '/August' ;}};document.getElementById('i6zsz').onclick = (event) => {
+    {   location.href= '/August' ;}};document.getElementById('iuj19x').onclick = (event) => {
+    event.preventDefault();
+    {   location.href= '/Home' ;}};document.getElementById('i6zsz').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
