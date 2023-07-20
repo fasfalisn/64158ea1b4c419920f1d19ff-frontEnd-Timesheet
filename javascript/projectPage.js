@@ -59,7 +59,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
           parentId = key;
         }
       });
-     location.href= '/projectPage/' + transitionId;}};document.getElementById('ip86m').onclick = (event) => {
+     location.href= '/workpackagePage/' + transitionId;}};document.getElementById('ip86m').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
