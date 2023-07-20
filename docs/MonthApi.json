@@ -1,0 +1,87 @@
+
+[{
+    "methodType":"POST",
+    "methodName":"createmonth",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Month"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMonthApi = new TempApi.MonthApi();",
+    "importModelParameter":["let month = new TempApi.Month();"],
+    "modelNames":["month"],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMonthApi.createmonth( month, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"DELETE",
+    "methodName":"deletemonth",
+    "returnType":{
+
+      "primitive":"true",
+      "type":"null"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMonthApi = new TempApi.MonthApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMonthApi.deletemonth( monthId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');/**nextFunction*/}});"
+  },{
+    "methodType":"GETALL",
+    "methodName":"getAllmonth",
+    "returnType":{
+      "primitive":false,
+      "jsType":"Array",
+      "modelName":"[Month]"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMonthApi = new TempApi.MonthApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMonthApi.getAllmonth((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"GETBYPARAMS",
+    "methodName":"getByParamsmonth",
+    "returnType":{
+      "primitive":false,
+      "jsType":"Array",
+      "modelName":"[Month]"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMonthApi = new TempApi.MonthApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMonthApi.getByParamsmonth( filter, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"GET",
+    "methodName":"getmonth",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Month"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMonthApi = new TempApi.MonthApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMonthApi.getmonth( monthId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"PUT",
+    "methodName":"updatemonth",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Month"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiMonthApi = new TempApi.MonthApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiMonthApi.updatemonth( monthId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  }
+]

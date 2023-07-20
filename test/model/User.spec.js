@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property userProject (base name: "userProject")', function() {
+      // uncomment below and update the code to test the property userProject
+      //var instance = new TempApi.User();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -22,20 +22,20 @@ class ExpressServer {
       this.app.get('/', (req, res) => res.sendFile(path.join(__dirname,'html','Home.html')));
 			this.app.get('/Home', (req, res) => res.sendFile(path.join(__dirname,'html','Home.html')));
 			this.app.get('/Home/:id', (req, res) => res.sendFile(path.join(__dirname,'html','Home.html')));
-			this.app.get('/August', (req, res) => res.sendFile(path.join(__dirname,'html','August.html')));
-			this.app.get('/August/:id', (req, res) => res.sendFile(path.join(__dirname,'html','August.html')));
 			this.app.get('/addEmployee', (req, res) => res.sendFile(path.join(__dirname,'html','addEmployee.html')));
 			this.app.get('/addEmployee/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addEmployee.html')));
+			this.app.get('/August', (req, res) => res.sendFile(path.join(__dirname,'html','August.html')));
+			this.app.get('/August/:id', (req, res) => res.sendFile(path.join(__dirname,'html','August.html')));
 			this.app.get('/addAugust', (req, res) => res.sendFile(path.join(__dirname,'html','addAugust.html')));
 			this.app.get('/addAugust/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addAugust.html')));
 			this.app.get('/editAugust', (req, res) => res.sendFile(path.join(__dirname,'html','editAugust.html')));
 			this.app.get('/editAugust/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editAugust.html')));
 			this.app.get('/editEmployee', (req, res) => res.sendFile(path.join(__dirname,'html','editEmployee.html')));
 			this.app.get('/editEmployee/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editEmployee.html')));
-			this.app.get('/September', (req, res) => res.sendFile(path.join(__dirname,'html','September.html')));
-			this.app.get('/September/:id', (req, res) => res.sendFile(path.join(__dirname,'html','September.html')));
 			this.app.get('/addSeptember', (req, res) => res.sendFile(path.join(__dirname,'html','addSeptember.html')));
 			this.app.get('/addSeptember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addSeptember.html')));
+			this.app.get('/September', (req, res) => res.sendFile(path.join(__dirname,'html','September.html')));
+			this.app.get('/September/:id', (req, res) => res.sendFile(path.join(__dirname,'html','September.html')));
 			this.app.get('/editSeptember', (req, res) => res.sendFile(path.join(__dirname,'html','editSeptember.html')));
 			this.app.get('/editSeptember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editSeptember.html')));
 			this.app.get('/October', (req, res) => res.sendFile(path.join(__dirname,'html','October.html')));
@@ -56,6 +56,30 @@ class ExpressServer {
 			this.app.get('/addDecember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addDecember.html')));
 			this.app.get('/editDecember', (req, res) => res.sendFile(path.join(__dirname,'html','editDecember.html')));
 			this.app.get('/editDecember/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editDecember.html')));
+			this.app.get('/addDay', (req, res) => res.sendFile(path.join(__dirname,'html','addDay.html')));
+			this.app.get('/addDay/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addDay.html')));
+			this.app.get('/editDay', (req, res) => res.sendFile(path.join(__dirname,'html','editDay.html')));
+			this.app.get('/editDay/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editDay.html')));
+			this.app.get('/addMonth', (req, res) => res.sendFile(path.join(__dirname,'html','addMonth.html')));
+			this.app.get('/addMonth/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addMonth.html')));
+			this.app.get('/editMonth', (req, res) => res.sendFile(path.join(__dirname,'html','editMonth.html')));
+			this.app.get('/editMonth/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editMonth.html')));
+			this.app.get('/AddWorkpackage', (req, res) => res.sendFile(path.join(__dirname,'html','AddWorkpackage.html')));
+			this.app.get('/AddWorkpackage/:id', (req, res) => res.sendFile(path.join(__dirname,'html','AddWorkpackage.html')));
+			this.app.get('/editWorkpackage', (req, res) => res.sendFile(path.join(__dirname,'html','editWorkpackage.html')));
+			this.app.get('/editWorkpackage/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editWorkpackage.html')));
+			this.app.get('/addProject', (req, res) => res.sendFile(path.join(__dirname,'html','addProject.html')));
+			this.app.get('/addProject/:id', (req, res) => res.sendFile(path.join(__dirname,'html','addProject.html')));
+			this.app.get('/editProject', (req, res) => res.sendFile(path.join(__dirname,'html','editProject.html')));
+			this.app.get('/editProject/:id', (req, res) => res.sendFile(path.join(__dirname,'html','editProject.html')));
+			this.app.get('/userProfile', (req, res) => res.sendFile(path.join(__dirname,'html','userProfile.html')));
+			this.app.get('/userProfile/:id', (req, res) => res.sendFile(path.join(__dirname,'html','userProfile.html')));
+			this.app.get('/projectPage', (req, res) => res.sendFile(path.join(__dirname,'html','projectPage.html')));
+			this.app.get('/projectPage/:id', (req, res) => res.sendFile(path.join(__dirname,'html','projectPage.html')));
+			this.app.get('/workpackagePage', (req, res) => res.sendFile(path.join(__dirname,'html','workpackagePage.html')));
+			this.app.get('/workpackagePage/:id', (req, res) => res.sendFile(path.join(__dirname,'html','workpackagePage.html')));
+			this.app.get('/monthPage', (req, res) => res.sendFile(path.join(__dirname,'html','monthPage.html')));
+			this.app.get('/monthPage/:id', (req, res) => res.sendFile(path.join(__dirname,'html','monthPage.html')));
 			
     }
   

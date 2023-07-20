@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import Project from './Project';
 
 /**
  * The User model module.
@@ -24,10 +25,11 @@ class User {
      * @alias module:model/User
      * @param userName {String} 
      * @param userSurname {String} 
+     * @param userProject {Array.<module:model/Project>} 
      */
-    constructor(userName, userSurname) { 
+    constructor(userName, userSurname, userProject) { 
         
-        User.initialize(this, userName, userSurname);
+        User.initialize(this, userName, userSurname, userProject);
     }
 
     /**
@@ -35,9 +37,10 @@ class User {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, userName, userSurname) { 
+    static initialize(obj, userName, userSurname, userProject) { 
         obj['userName'] = userName;
         obj['userSurname'] = userSurname;
+        obj['userProject'] = userProject;
     }
 
     /**
@@ -60,6 +63,9 @@ class User {
             if (data.hasOwnProperty('userSurname')) {
                 obj['userSurname'] = ApiClient.convertToType(data['userSurname'], 'String');
             }
+            if (data.hasOwnProperty('userProject')) {
+                obj['userProject'] = ApiClient.convertToType(data['userProject'], [Project]);
+            }
         }
         return obj;
     }
@@ -81,6 +87,11 @@ User.prototype['userName'] = undefined;
  * @member {String} userSurname
  */
 User.prototype['userSurname'] = undefined;
+
+/**
+ * @member {Array.<module:model/Project>} userProject
+ */
+User.prototype['userProject'] = undefined;
 
 
 

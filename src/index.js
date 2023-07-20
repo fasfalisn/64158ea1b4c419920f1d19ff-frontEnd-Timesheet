@@ -14,17 +14,25 @@
 
 import ApiClient from './ApiClient';
 import August from './model/August';
+import Day from './model/Day';
 import December from './model/December';
+import Month from './model/Month';
 import November from './model/November';
 import October from './model/October';
+import Project from './model/Project';
 import September from './model/September';
 import User from './model/User';
+import Workpackage from './model/Workpackage';
 import AugustApi from './api/AugustApi';
+import DayApi from './api/DayApi';
 import DecemberApi from './api/DecemberApi';
+import MonthApi from './api/MonthApi';
 import NovemberApi from './api/NovemberApi';
 import OctoberApi from './api/OctoberApi';
+import ProjectApi from './api/ProjectApi';
 import SeptemberApi from './api/SeptemberApi';
 import UserApi from './api/UserApi';
+import WorkpackageApi from './api/WorkpackageApi';
 
 
 /**
@@ -72,10 +80,22 @@ export {
     August,
 
     /**
+     * The Day model constructor.
+     * @property {module:model/Day}
+     */
+    Day,
+
+    /**
      * The December model constructor.
      * @property {module:model/December}
      */
     December,
+
+    /**
+     * The Month model constructor.
+     * @property {module:model/Month}
+     */
+    Month,
 
     /**
      * The November model constructor.
@@ -90,6 +110,12 @@ export {
     October,
 
     /**
+     * The Project model constructor.
+     * @property {module:model/Project}
+     */
+    Project,
+
+    /**
      * The September model constructor.
      * @property {module:model/September}
      */
@@ -102,16 +128,34 @@ export {
     User,
 
     /**
+     * The Workpackage model constructor.
+     * @property {module:model/Workpackage}
+     */
+    Workpackage,
+
+    /**
     * The AugustApi service constructor.
     * @property {module:api/AugustApi}
     */
     AugustApi,
 
     /**
+    * The DayApi service constructor.
+    * @property {module:api/DayApi}
+    */
+    DayApi,
+
+    /**
     * The DecemberApi service constructor.
     * @property {module:api/DecemberApi}
     */
     DecemberApi,
+
+    /**
+    * The MonthApi service constructor.
+    * @property {module:api/MonthApi}
+    */
+    MonthApi,
 
     /**
     * The NovemberApi service constructor.
@@ -126,6 +170,12 @@ export {
     OctoberApi,
 
     /**
+    * The ProjectApi service constructor.
+    * @property {module:api/ProjectApi}
+    */
+    ProjectApi,
+
+    /**
     * The SeptemberApi service constructor.
     * @property {module:api/SeptemberApi}
     */
@@ -135,7 +185,13 @@ export {
     * The UserApi service constructor.
     * @property {module:api/UserApi}
     */
-    UserApi
+    UserApi,
+
+    /**
+    * The WorkpackageApi service constructor.
+    * @property {module:api/WorkpackageApi}
+    */
+    WorkpackageApi
 };
 
 export default {
@@ -152,10 +208,22 @@ export default {
     August,
 
     /**
+     * The Day model constructor.
+     * @property {module:model/Day}
+     */
+    Day,
+
+    /**
      * The December model constructor.
      * @property {module:model/December}
      */
     December,
+
+    /**
+     * The Month model constructor.
+     * @property {module:model/Month}
+     */
+    Month,
 
     /**
      * The November model constructor.
@@ -170,6 +238,12 @@ export default {
     October,
 
     /**
+     * The Project model constructor.
+     * @property {module:model/Project}
+     */
+    Project,
+
+    /**
      * The September model constructor.
      * @property {module:model/September}
      */
@@ -182,16 +256,34 @@ export default {
     User,
 
     /**
+     * The Workpackage model constructor.
+     * @property {module:model/Workpackage}
+     */
+    Workpackage,
+
+    /**
     * The AugustApi service constructor.
     * @property {module:api/AugustApi}
     */
     AugustApi,
 
     /**
+    * The DayApi service constructor.
+    * @property {module:api/DayApi}
+    */
+    DayApi,
+
+    /**
     * The DecemberApi service constructor.
     * @property {module:api/DecemberApi}
     */
     DecemberApi,
+
+    /**
+    * The MonthApi service constructor.
+    * @property {module:api/MonthApi}
+    */
+    MonthApi,
 
     /**
     * The NovemberApi service constructor.
@@ -206,6 +298,12 @@ export default {
     OctoberApi,
 
     /**
+    * The ProjectApi service constructor.
+    * @property {module:api/ProjectApi}
+    */
+    ProjectApi,
+
+    /**
     * The SeptemberApi service constructor.
     * @property {module:api/SeptemberApi}
     */
@@ -215,5 +313,11 @@ export default {
     * The UserApi service constructor.
     * @property {module:api/UserApi}
     */
-    UserApi
+    UserApi,
+
+    /**
+    * The WorkpackageApi service constructor.
+    * @property {module:api/WorkpackageApi}
+    */
+    WorkpackageApi
 };
