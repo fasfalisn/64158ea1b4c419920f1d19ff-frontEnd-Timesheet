@@ -70,40 +70,8 @@ document.addEventListener('alignuserProject', function(e) {
         const insideSubdocument = document.querySelector("[annotationname = 'userProject']");
         if (insideSubdocument !==null) {
           const tableData = response.body.query.userProject;
-    initializearrayivc4k(tableData); 
+      initializearrayivc4k(tableData); 
  refreshULii52j();
-    const tableDataElement = insideSubdocument.querySelectorAll("[dataitem='true']");
-    tableData.forEach((data,index) => {
-      if(tableDataElement.length < index) {
-        return;
-      }
-       try {
-      const attributeSubdocumentElement = tableDataElement[
-        index
-      ].querySelector("[annotationname = 'projectId']");
-      if (attributeSubdocumentElement !== null) {
-        attributeSubdocumentElement.textContent = tableData[tableData.length - index -1].projectId;
-      }
-    }
-    catch(e) {console.log(e);};
-      
-      map.set(
-        tableDataElement[index].getAttribute("id"),
-        tableData[tableData.length - index -1]
-      );
-    
-    });
-    
-      [...tableDataElement].forEach((element, index) => {
-        if (index >= tableData.length) {
-          tableDataElement[index].style.display = "none";
-        }
-        else {
-          tableDataElement[index].style.display = "";
-        }
-      });
-    
-    
         }
       if(response.body.query.userProject._id){
         map.set(

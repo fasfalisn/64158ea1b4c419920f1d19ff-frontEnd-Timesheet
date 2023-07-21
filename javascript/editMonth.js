@@ -51,40 +51,8 @@ document.addEventListener('alignmonthDay', function(e) {
         const insideSubdocument = document.querySelector("[annotationname = 'monthDay']");
         if (insideSubdocument !==null) {
           const tableData = response.body.query.monthDay;
-    initializearrayiw5hk(tableData); 
+      initializearrayiw5hk(tableData); 
  refreshULinoen();
-    const tableDataElement = insideSubdocument.querySelectorAll("[dataitem='true']");
-    tableData.forEach((data,index) => {
-      if(tableDataElement.length < index) {
-        return;
-      }
-       try {
-      const attributeSubdocumentElement = tableDataElement[
-        index
-      ].querySelector("[annotationname = 'dayId']");
-      if (attributeSubdocumentElement !== null) {
-        attributeSubdocumentElement.textContent = tableData[tableData.length - index -1].dayId;
-      }
-    }
-    catch(e) {console.log(e);};
-      
-      map.set(
-        tableDataElement[index].getAttribute("id"),
-        tableData[tableData.length - index -1]
-      );
-    
-    });
-    
-      [...tableDataElement].forEach((element, index) => {
-        if (index >= tableData.length) {
-          tableDataElement[index].style.display = "none";
-        }
-        else {
-          tableDataElement[index].style.display = "";
-        }
-      });
-    
-    
         }
       if(response.body.query.monthDay._id){
         map.set(

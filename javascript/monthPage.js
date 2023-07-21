@@ -603,14 +603,15 @@ let apiMonthApi = new TempApi.MonthApi();import TempApi from '../src/index';docu
         return;
       }
        try {
-      const attributeSubdocumentElement = tableDataElement[
-        index
-      ].querySelector("[annotationname = 'dayDate']");
-      if (attributeSubdocumentElement !== null) {
-        attributeSubdocumentElement.textContent = tableData[tableData.length - index -1].dayDate;
+        const attributeSubdocumentElement = tableDataElement[
+          index
+        ].querySelector("[annotationname = 'dayDate']");
+        const dayDateIsoFormat = new Date(tableData[tableData.length - index -1].dayDate);
+        if (attributeSubdocumentElement !== null) {
+          attributeSubdocumentElement.textContent = dayDateIsoFormat.getDate()+'-'+(dayDateIsoFormat.getMonth()+1)+'-'+dayDateIsoFormat.getFullYear();
+        }
       }
-    }
-    catch(e) {console.log(e);}; try {
+      catch(e) {console.log(e);}; try {
       const attributeSubdocumentElement = tableDataElement[
         index
       ].querySelector("[annotationname = 'dayHours']");
