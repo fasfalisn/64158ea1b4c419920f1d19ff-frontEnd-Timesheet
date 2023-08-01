@@ -70,7 +70,7 @@ document.addEventListener('alignuserProject', function(e) {
         const insideSubdocument = document.querySelector("[annotationname = 'userProject']");
         if (insideSubdocument !==null) {
           const tableDatauserProject = response.body.query.userProject;
-      initializearrayivc4k(tableData); 
+      initializearrayivc4k(tableDatauserProject); 
  refreshULii52j();
         }
       if(response.body.query.userProject._id){

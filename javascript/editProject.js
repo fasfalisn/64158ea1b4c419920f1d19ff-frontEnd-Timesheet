@@ -51,7 +51,7 @@ document.addEventListener('alignprojectWp', function(e) {
         const insideSubdocument = document.querySelector("[annotationname = 'projectWp']");
         if (insideSubdocument !==null) {
           const tableDataprojectWp = response.body.query.projectWp;
-      initializearrayim9s4(tableData); 
+      initializearrayim9s4(tableDataprojectWp); 
  refreshULi3efc();
         }
       if(response.body.query.projectWp._id){
