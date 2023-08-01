@@ -32,6 +32,7 @@ module.exports = {
 	'projectPage' : './javascript/projectPage.js',
 	'workpackagePage' : './javascript/workpackagePage.js',
 	'monthPage' : './javascript/monthPage.js',
+	'profile' : './javascript/profile.js',
 },
   output: {
     path: path.resolve(__dirname, 'dist'),

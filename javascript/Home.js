@@ -21,7 +21,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('iidqp').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('iidqp').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -59,7 +59,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('iw658').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('iw658').onclick = (event) => {
     event.preventDefault();
     {   location.href= '/userProfile' ;}};document.getElementById('i5rig').onclick = (event) => {
     event.preventDefault();
@@ -99,7 +99,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('i05us').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('i05us').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -118,7 +118,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('iatmn').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('iatmn').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -137,7 +137,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('iucmo').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('iucmo').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -175,7 +175,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ixwwj').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ixwwj').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -213,7 +213,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('i2nw6').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('i2nw6').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -251,7 +251,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('islisf').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('islisf').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -289,7 +289,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ickcgh').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ickcgh').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -327,7 +327,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ij5hqo').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ij5hqo').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -365,7 +365,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ipr9ej').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ipr9ej').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -403,7 +403,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('i1gfme').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('i1gfme').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -441,7 +441,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('i7l9bw').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('i7l9bw').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -479,7 +479,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ia8h0l').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ia8h0l').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -517,7 +517,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ik68pi').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ik68pi').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -555,7 +555,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('iukpcb').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('iukpcb').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -593,7 +593,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ih1lwe').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ih1lwe').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -631,7 +631,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('icryuj').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('icryuj').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -669,7 +669,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('i0dzax').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('i0dzax').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);
@@ -707,7 +707,7 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
           parentId = key;
         }
       });
-     location.href= '/userProfile/' + transitionId;}};document.getElementById('ij36bt').onclick = (event) => {
+     location.href= '/profile/' + transitionId;}};document.getElementById('ij36bt').onclick = (event) => {
     event.preventDefault();
     {  
       let transitionId = window.location.href.split('/').at(-1);

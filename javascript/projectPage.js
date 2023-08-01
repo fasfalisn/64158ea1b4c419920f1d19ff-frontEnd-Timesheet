@@ -196,36 +196,46 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
         document.querySelector('[annotationname = projectWp]').setAttribute('selected-element',response.body.query.projectWp.undefined);
         const insideSubdocument = document.querySelector("[annotationname = 'projectWp']");
         if (insideSubdocument !==null) {
-          const tableData = response.body.query.projectWp;
+          const tableDataprojectWp = response.body.query.projectWp;
     
-    const tableDataElement = insideSubdocument.querySelectorAll("[dataitem='true']");
-    tableData.forEach((data,index) => {
-      if(tableDataElement.length < index) {
+    
+    
+      const tableDataElementworkpackageName = insideSubdocument.querySelectorAll("[annotationname = 'workpackageName']");
+    tableDataprojectWp.forEach((data, indexprojectWp) => {
+      if(tableDataElementworkpackageName.length <= indexprojectWp) {
         return;
       }
-       try {
-      const attributeSubdocumentElement = tableDataElement[
-        index
-      ].querySelector("[annotationname = 'workpackageName']");
-      if (attributeSubdocumentElement !== null) {
-        attributeSubdocumentElement.textContent = tableData[tableData.length - index -1].workpackageName;
+       
+    try {
+      if (tableDataElementworkpackageName[indexprojectWp] !== null) {
+        tableDataElementworkpackageName[indexprojectWp].textContent = tableDataprojectWp[tableDataprojectWp.length - indexprojectWp -1].workpackageName;
       }
     }
     catch(e) {console.log(e);};
       
-      map.set(
-        tableDataElement[index].getAttribute("id"),
-        tableData[tableData.length - index -1]
-      );
+      {
+        let parenttableDataElementworkpackageName =  tableDataElementworkpackageName[indexprojectWp];
+        while(parenttableDataElementworkpackageName.tagName !== "TR") {
+          parenttableDataElementworkpackageName = parenttableDataElementworkpackageName.parentNode;
+        }
+        map.set(
+          parenttableDataElementworkpackageName.getAttribute("id"),
+          tableDataprojectWp[tableDataprojectWp.length - indexprojectWp -1]
+        );
+      }
     
     });
     
-      [...tableDataElement].forEach((element, index) => {
-        if (index >= tableData.length) {
-          tableDataElement[index].style.display = "none";
+      [...tableDataElementworkpackageName].forEach((element, index) => {
+        parent = tableDataElementworkpackageName[index];
+        if (index >= tableDataprojectWp.length) {
+          while(parent.tagName !== "TR") {
+            parent = parent.parentNode;
+          }
+          parent.style.display = "none";
         }
         else {
-          tableDataElement[index].style.display = "";
+          tableDataElementworkpackageName[index].style.display = "";
         }
       });
     

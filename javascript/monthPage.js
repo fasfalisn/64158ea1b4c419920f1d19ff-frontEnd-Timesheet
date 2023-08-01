@@ -595,45 +595,53 @@ let apiMonthApi = new TempApi.MonthApi();import TempApi from '../src/index';docu
         document.querySelector('[annotationname = monthDay]').setAttribute('selected-element',response.body.query.monthDay.undefined);
         const insideSubdocument = document.querySelector("[annotationname = 'monthDay']");
         if (insideSubdocument !==null) {
-          const tableData = response.body.query.monthDay;
+          const tableDatamonthDay = response.body.query.monthDay;
     
-    const tableDataElement = insideSubdocument.querySelectorAll("[dataitem='true']");
-    tableData.forEach((data,index) => {
-      if(tableDataElement.length < index) {
+    
+    
+      const tableDataElementdayDate = insideSubdocument.querySelectorAll("[annotationname = 'dayDate']");
+      const tableDataElementdayHours = insideSubdocument.querySelectorAll("[annotationname = 'dayHours']");
+    tableDatamonthDay.forEach((data, indexmonthDay) => {
+      if(tableDataElementdayDate.length <= indexmonthDay) {
         return;
       }
        try {
-        const attributeSubdocumentElement = tableDataElement[
-          index
-        ].querySelector("[annotationname = 'dayDate']");
-        const dayDateIsoFormat = new Date(tableData[tableData.length - index -1].dayDate);
-        if (attributeSubdocumentElement !== null) {
-          attributeSubdocumentElement.textContent = dayDateIsoFormat.getDate()+'-'+(dayDateIsoFormat.getMonth()+1)+'-'+dayDateIsoFormat.getFullYear();
+        const dayDateIsoFormat = new Date(tableDatamonthDay[tableDatamonthDay.length - indexmonthDay -1].dayDate);
+        if (tableDataElementdayDate[indexmonthDay] !== null) {
+          tableDataElementdayDate[indexmonthDay].textContent = dayDateIsoFormat.getDate()+'-'+(dayDateIsoFormat.getMonth()+1)+'-'+dayDateIsoFormat.getFullYear();
         }
       }
-      catch(e) {console.log(e);}; try {
-      const attributeSubdocumentElement = tableDataElement[
-        index
-      ].querySelector("[annotationname = 'dayHours']");
-      if (attributeSubdocumentElement !== null) {
-        attributeSubdocumentElement.textContent = tableData[tableData.length - index -1].dayHours;
+      catch(e) {console.log(e);}; 
+    try {
+      if (tableDataElementdayHours[indexmonthDay] !== null) {
+        tableDataElementdayHours[indexmonthDay].textContent = tableDatamonthDay[tableDatamonthDay.length - indexmonthDay -1].dayHours;
       }
     }
     catch(e) {console.log(e);};
       
-      map.set(
-        tableDataElement[index].getAttribute("id"),
-        tableData[tableData.length - index -1]
-      );
+      {
+        let parenttableDataElementdayDate =  tableDataElementdayDate[indexmonthDay];
+        while(parenttableDataElementdayDate.tagName !== "TR") {
+          parenttableDataElementdayDate = parenttableDataElementdayDate.parentNode;
+        }
+        map.set(
+          parenttableDataElementdayDate.getAttribute("id"),
+          tableDatamonthDay[tableDatamonthDay.length - indexmonthDay -1]
+        );
+      }
     
     });
     
-      [...tableDataElement].forEach((element, index) => {
-        if (index >= tableData.length) {
-          tableDataElement[index].style.display = "none";
+      [...tableDataElementdayDate].forEach((element, index) => {
+        parent = tableDataElementdayDate[index];
+        if (index >= tableDatamonthDay.length) {
+          while(parent.tagName !== "TR") {
+            parent = parent.parentNode;
+          }
+          parent.style.display = "none";
         }
         else {
-          tableDataElement[index].style.display = "";
+          tableDataElementdayDate[index].style.display = "";
         }
       });
     

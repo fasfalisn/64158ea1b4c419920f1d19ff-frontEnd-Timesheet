@@ -50,7 +50,7 @@ document.addEventListener('alignmonthDay', function(e) {
         document.querySelector('[annotationname = monthDay]').setAttribute('selected-element',response.body.query.monthDay.dayId);document.dispatchEvent(new Event("alignmonthDay"));
         const insideSubdocument = document.querySelector("[annotationname = 'monthDay']");
         if (insideSubdocument !==null) {
-          const tableData = response.body.query.monthDay;
+          const tableDatamonthDay = response.body.query.monthDay;
       initializearrayiw5hk(tableData); 
  refreshULinoen();
         }

@@ -462,36 +462,46 @@ let apiWorkpackageApi = new TempApi.WorkpackageApi();import TempApi from '../src
         document.querySelector('[annotationname = workpackageMonth]').setAttribute('selected-element',response.body.query.workpackageMonth.undefined);
         const insideSubdocument = document.querySelector("[annotationname = 'workpackageMonth']");
         if (insideSubdocument !==null) {
-          const tableData = response.body.query.workpackageMonth;
+          const tableDataworkpackageMonth = response.body.query.workpackageMonth;
     
-    const tableDataElement = insideSubdocument.querySelectorAll("[dataitem='true']");
-    tableData.forEach((data,index) => {
-      if(tableDataElement.length < index) {
+    
+    
+      const tableDataElementmonthName = insideSubdocument.querySelectorAll("[annotationname = 'monthName']");
+    tableDataworkpackageMonth.forEach((data, indexworkpackageMonth) => {
+      if(tableDataElementmonthName.length <= indexworkpackageMonth) {
         return;
       }
-       try {
-      const attributeSubdocumentElement = tableDataElement[
-        index
-      ].querySelector("[annotationname = 'monthName']");
-      if (attributeSubdocumentElement !== null) {
-        attributeSubdocumentElement.textContent = tableData[tableData.length - index -1].monthName;
+       
+    try {
+      if (tableDataElementmonthName[indexworkpackageMonth] !== null) {
+        tableDataElementmonthName[indexworkpackageMonth].textContent = tableDataworkpackageMonth[tableDataworkpackageMonth.length - indexworkpackageMonth -1].monthName;
       }
     }
     catch(e) {console.log(e);};
       
-      map.set(
-        tableDataElement[index].getAttribute("id"),
-        tableData[tableData.length - index -1]
-      );
+      {
+        let parenttableDataElementmonthName =  tableDataElementmonthName[indexworkpackageMonth];
+        while(parenttableDataElementmonthName.tagName !== "TR") {
+          parenttableDataElementmonthName = parenttableDataElementmonthName.parentNode;
+        }
+        map.set(
+          parenttableDataElementmonthName.getAttribute("id"),
+          tableDataworkpackageMonth[tableDataworkpackageMonth.length - indexworkpackageMonth -1]
+        );
+      }
     
     });
     
-      [...tableDataElement].forEach((element, index) => {
-        if (index >= tableData.length) {
-          tableDataElement[index].style.display = "none";
+      [...tableDataElementmonthName].forEach((element, index) => {
+        parent = tableDataElementmonthName[index];
+        if (index >= tableDataworkpackageMonth.length) {
+          while(parent.tagName !== "TR") {
+            parent = parent.parentNode;
+          }
+          parent.style.display = "none";
         }
         else {
-          tableDataElement[index].style.display = "";
+          tableDataElementmonthName[index].style.display = "";
         }
       });
     

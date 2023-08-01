@@ -206,36 +206,46 @@ let apiUserApi = new TempApi.UserApi();import TempApi from '../src/index';docume
         document.querySelector('[annotationname = userProject]').setAttribute('selected-element',response.body.query.userProject.undefined);
         const insideSubdocument = document.querySelector("[annotationname = 'userProject']");
         if (insideSubdocument !==null) {
-          const tableData = response.body.query.userProject;
+          const tableDatauserProject = response.body.query.userProject;
     
-    const tableDataElement = insideSubdocument.querySelectorAll("[dataitem='true']");
-    tableData.forEach((data,index) => {
-      if(tableDataElement.length < index) {
+    
+    
+      const tableDataElementprojectName = insideSubdocument.querySelectorAll("[annotationname = 'projectName']");
+    tableDatauserProject.forEach((data, indexuserProject) => {
+      if(tableDataElementprojectName.length <= indexuserProject) {
         return;
       }
-       try {
-      const attributeSubdocumentElement = tableDataElement[
-        index
-      ].querySelector("[annotationname = 'projectName']");
-      if (attributeSubdocumentElement !== null) {
-        attributeSubdocumentElement.textContent = tableData[tableData.length - index -1].projectName;
+       
+    try {
+      if (tableDataElementprojectName[indexuserProject] !== null) {
+        tableDataElementprojectName[indexuserProject].textContent = tableDatauserProject[tableDatauserProject.length - indexuserProject -1].projectName;
       }
     }
     catch(e) {console.log(e);};
       
-      map.set(
-        tableDataElement[index].getAttribute("id"),
-        tableData[tableData.length - index -1]
-      );
+      {
+        let parenttableDataElementprojectName =  tableDataElementprojectName[indexuserProject];
+        while(parenttableDataElementprojectName.tagName !== "TR") {
+          parenttableDataElementprojectName = parenttableDataElementprojectName.parentNode;
+        }
+        map.set(
+          parenttableDataElementprojectName.getAttribute("id"),
+          tableDatauserProject[tableDatauserProject.length - indexuserProject -1]
+        );
+      }
     
     });
     
-      [...tableDataElement].forEach((element, index) => {
-        if (index >= tableData.length) {
-          tableDataElement[index].style.display = "none";
+      [...tableDataElementprojectName].forEach((element, index) => {
+        parent = tableDataElementprojectName[index];
+        if (index >= tableDatauserProject.length) {
+          while(parent.tagName !== "TR") {
+            parent = parent.parentNode;
+          }
+          parent.style.display = "none";
         }
         else {
-          tableDataElement[index].style.display = "";
+          tableDataElementprojectName[index].style.display = "";
         }
       });
     

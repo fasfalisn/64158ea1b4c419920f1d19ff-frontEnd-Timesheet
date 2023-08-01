@@ -50,7 +50,7 @@ document.addEventListener('alignworkpackageMonth', function(e) {
         document.querySelector('[annotationname = workpackageMonth]').setAttribute('selected-element',response.body.query.workpackageMonth.monthId);document.dispatchEvent(new Event("alignworkpackageMonth"));
         const insideSubdocument = document.querySelector("[annotationname = 'workpackageMonth']");
         if (insideSubdocument !==null) {
-          const tableData = response.body.query.workpackageMonth;
+          const tableDataworkpackageMonth = response.body.query.workpackageMonth;
       initializearrayi35wt(tableData); 
  refreshULiezek();
         }
