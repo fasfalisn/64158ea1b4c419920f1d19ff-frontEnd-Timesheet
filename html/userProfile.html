@@ -1,19 +1,245 @@
-<!DOCTYPE HTML><html><head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link rel="stylesheet" type="text/css" href="../css/userProfile.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-    <title>userProfile </title>
-    </head><body onunload=""><nav id="i7l0jj" draggable="true" data-highlightable="1" class="navbar navbar-expand-sm navbar-light py-3 fs-3 classRule-i7l0jj"><div id="i1ldcx" draggable="true" data-highlightable="1" class="container-fluid classRule-i1ldcx"><button id="ipe9eh" draggable="true" data-highlightable="1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" class="navbar-toggler classRule-ipe9eh"><span id="irfgxq" draggable="true" data-highlightable="1" class="navbar-toggler-icon classRule-irfgxq"></span></button><div id="sidebar" draggable="true" data-highlightable="1" classtype="sidebar-container" class="offcanvas offcanvas-start sidebar-container text-white classRule-sidebar"><div id="i77vr5" draggable="true" data-highlightable="1" class="offcanvas-header classRule-i77vr5"><button id="itrz3t" draggable="true" data-highlightable="1" type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="text-white bg-transparent border-0 fs-1 classRule-itrz3t"><i id="ib2s4j" draggable="true" data-highlightable="1" class="bi-x text-white classRule-ib2s4j"></i></button></div><div id="ikzuq2" draggable="true" data-highlightable="1" class="offcanvas-body p-0 classRule-ikzuq2"><ul id="iwk7so" draggable="true" data-highlightable="1" class="navbar-nav flex-column text-white h-100 py-5 classRule-iwk7so"><li id="iwylau" draggable="true" data-highlightable="1" statype="offcanvas-body--item" target_page="648837ef1dca8323294f3772" class="nav-item nav-link pointer offcanvas-body--item classRule-iwylau"><a id="ivt7uo" draggable="true" data-highlightable="1" class="d-flex align-items-center justify-content-end text-white classRule-ivt7uo"><span id="ij17ik" draggable="true" data-highlightable="1" class="classRule-ij17ik">Μήνες</span><i id="i92963" draggable="true" data-highlightable="1" class="bi bi-calendar-fill mx-5 classRule-i92963"></i></a></li><li id="iuj19x" draggable="true" data-highlightable="1" statetype="offcanvas-body--item" target_page="6486bc2f969cf99eb9540096" class="nav-item nav-link pointer offcanvas-body--item classRule-iuj19x"><a id="ivy46k" draggable="true" data-highlightable="1" class="d-flex align-items-center justify-content-end text-white classRule-ivy46k"><span id="it5w1h" draggable="true" data-highlightable="1" class="classRule-it5w1h">Υπάλληλοι</span><i id="incdhh" draggable="true" data-highlightable="1" class="bi bi-people-fill mx-5 classRule-incdhh"></i></a></li></ul></div><div id="i2zgob" draggable="true" data-highlightable="1" class="offcanvas-footer classRule-i2zgob"></div></div><div id="ib0yjs" draggable="true" data-highlightable="1" class="collapse navbar-collapse classRule-ib0yjs"><ul id="icrtz4" draggable="true" data-highlightable="1" class="navbar-nav me-auto d-flex align-items-center justify-content-center classRule-icrtz4"><li id="i8a6cm" draggable="true" data-highlightable="1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" class="nav-item fs-1 classRule-i8a6cm"><a id="ipqk4a" draggable="true" data-highlightable="1" class="pointer classRule-ipqk4a"><i id="ihdqlg" draggable="true" data-highlightable="1" classtype="text-green" class="bi bi-list text-green classRule-ihdqlg"></i></a></li></ul><ul id="i9jwvj" draggable="true" data-highlightable="1" class="navbar-nav ms-auto d-flex align-items-center justify-content-center classRule-i9jwvj"><li id="iuauhc" draggable="true" data-highlightable="1" href="#!" class="nav-item nav-link classRule-iuauhc"><a id="ic7h5b" draggable="true" data-highlightable="1" class="navbar-brand classRule-ic7h5b"><img id="izrf48" draggable="true" src="https://vilabs.eu/vlb-uploads/2021/10/ViLabs-logo-transp.png" alt="Logo" width="150" height="75" class="img-fluid classRule-izrf48"/></a></li></ul></div></div></nav><div id="iaeji" annotationname="getUser" class="container p-3 classRule-iaeji"><div id="i1t9b" class="classRule-i1t9b"></div><div id="ip49z" class="classRule-ip49z">
+<!DOCTYPE HTML>
+<html>
 
-            </div><div id="iwq7i" class="container classRule-iwq7i"><div dataitems="getAllCards" id="iz2vj" class="row col-12 justify-content-between align-items-start classRule-iz2vj"><div dataitem="true" id="iodsq" class="col-12 classRule-iodsq"><div classtype="leftbar-container" id="i0avf" class="leftbar-container text-white classRule-i0avf"><div id="iw9bw" class="body classRule-iw9bw"><ul id="imags" class="flex-column text-white fs-3 fw-bolder h-100 py-5 px-0 classRule-imags"><li href="#!" id="idt82" class="nav-item nav-link pointer classRule-idt82"><a id="i43kg" class="d-flex align-items-center justify-content-center justify-content-md-end text-white classRule-i43kg"><span id="ivakn" annotationname="userName" class="classRule-ivakn">holo</span><span id="iwpyd" annotationname="userSurname" class="classRule-iwpyd">user</span><img src="https://i.ibb.co/S5wJS5j/d18c1521c859.png" alt="User Image" width="120" height="120" id="itkd5" class="rounded-circle d-none d-sm-block shadow mx-3 classRule-itkd5"/></a></li></ul></div></div></div></div></div><div id="i18v2" annotationname="userProject" class="table-responsive classRule-i18v2"><table id="ika1t" class="table table-stripped2 table-border classRule-ika1t"><thead id="i5ykj" class="table-dark classRule-i5ykj"><tr id="ij8zy" class="classRule-ij8zy"><th id="i4azh" class="classRule-i4azh"><span id="i7qmx" class="horiz-center-item table-line-height classRule-i7qmx">Project</span></th><th id="ibxsw" class="classRule-ibxsw"><span id="i2k4y" class="horiz-center-item table-line-height classRule-i2k4y">Action</span></th></tr></thead><tbody dataitems="getAllRows" id="izwkg" class="classRule-izwkg"><tr dataitem="true" id="if9jw" class="classRule-if9jw"><td id="ilv6g" class="classRule-ilv6g"><span id="i6zsz" annotationname="projectName" transition-by-id target_page="64b7d0ee4363dc352c2487fe" class="horiz-center-item table-line-height classRule-i6zsz pointer">Cell</span></td><td id="ibf1j" class="space-around-elements classRule-ibf1j"><div id="i799k" transition-by-id target_page="64b7bace4363dc352c247ed2" class="btn pointer bi bi-pencil-square manage-btn classRule-i799k"> Manage</div><div id="isush" target_page="-1" class="btn bi bi-trash delete-btn classRule-isush pointer"> Delete</div></td></tr><tr dataitem="true" id="ixt1yw" class="classRule-ixt1yw"><td id="imrwf" class="classRule-imrwf"><span annotationname="projectName" transition-by-id target_page="64b7d0ee4363dc352c2487fe" id="iw253" class="horiz-center-item table-line-height pointer classRule-iw253">Cell</span></td><td id="icwk5w" class="space-around-elements classRule-icwk5w"><div transition-by-id target_page="64b7bace4363dc352c247ed2" id="isekcp" class="btn pointer bi bi-pencil-square manage-btn classRule-isekcp"> Manage</div><div target_page="-1" id="iysspr" class="btn bi bi-trash delete-btn pointer classRule-iysspr"> Delete</div></td></tr><tr dataitem="true" id="iyo4q" class="classRule-iyo4q"><td id="idfl1" class="classRule-idfl1"><span annotationname="projectName" transition-by-id target_page="64b7d0ee4363dc352c2487fe" id="i01w6" class="horiz-center-item table-line-height pointer classRule-i01w6">Cell</span></td><td id="ic1po" class="space-around-elements classRule-ic1po"><div transition-by-id target_page="64b7bace4363dc352c247ed2" id="ia8o9" class="btn pointer bi bi-pencil-square manage-btn classRule-ia8o9"> Manage</div><div target_page="-1" id="imlzb" class="btn bi bi-trash delete-btn pointer classRule-imlzb"> Delete</div></td></tr><tr dataitem="true" id="idjc4" class="classRule-idjc4"><td id="idfmc" class="classRule-idfmc"><span annotationname="projectName" transition-by-id target_page="64b7d0ee4363dc352c2487fe" id="i4kpu" class="horiz-center-item table-line-height pointer classRule-i4kpu">Cell</span></td><td id="i5qyc" class="space-around-elements classRule-i5qyc"><div transition-by-id target_page="64b7bace4363dc352c247ed2" id="ib0eb" class="btn pointer bi bi-pencil-square manage-btn classRule-ib0eb"> Manage</div><div target_page="-1" id="iirfc" class="btn bi bi-trash delete-btn pointer classRule-iirfc"> Delete</div></td></tr><tr dataitem="true" id="iyhar" class="classRule-iyhar"><td id="iqkca" class="classRule-iqkca"><span annotationname="projectName" transition-by-id target_page="64b7d0ee4363dc352c2487fe" id="idkfd" class="horiz-center-item table-line-height pointer classRule-idkfd">Cell</span></td><td id="ig63h" class="space-around-elements classRule-ig63h"><div transition-by-id target_page="64b7bace4363dc352c247ed2" id="ig71h" class="btn pointer bi bi-pencil-square manage-btn classRule-ig71h"> Manage</div><div target_page="-1" id="ivk9t" class="btn bi bi-trash delete-btn pointer classRule-ivk9t"> Delete</div></td></tr></tbody></table></div></div>
-    <script src="../dist/userProfile.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body></html>
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" type="text/css" href="../css/userProfile.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <title>userProfile </title>
+</head>
+
+<body onunload="">
+        <nav id="i7l0jj" draggable="true" data-highlightable="1"
+                class="navbar navbar-expand-sm navbar-light py-3 fs-3 classRule-i7l0jj">
+                <div id="i1ldcx" draggable="true" data-highlightable="1" class="container-fluid classRule-i1ldcx">
+                        <button id="ipe9eh" draggable="true" data-highlightable="1" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"
+                                class="navbar-toggler classRule-ipe9eh"><span id="irfgxq" draggable="true"
+                                        data-highlightable="1"
+                                        class="navbar-toggler-icon classRule-irfgxq"></span></button>
+                        <div id="sidebar" draggable="true" data-highlightable="1" classtype="sidebar-container"
+                                class="offcanvas offcanvas-start sidebar-container text-white classRule-sidebar">
+                                <div id="i77vr5" draggable="true" data-highlightable="1"
+                                        class="offcanvas-header classRule-i77vr5"><button id="itrz3t" draggable="true"
+                                                data-highlightable="1" type="button" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"
+                                                class="text-white bg-transparent border-0 fs-1 classRule-itrz3t"><i
+                                                        id="ib2s4j" draggable="true" data-highlightable="1"
+                                                        class="bi-x text-white classRule-ib2s4j"></i></button></div>
+                                <div id="ikzuq2" draggable="true" data-highlightable="1"
+                                        class="offcanvas-body p-0 classRule-ikzuq2">
+                                        <ul id="iwk7so" draggable="true" data-highlightable="1"
+                                                class="navbar-nav flex-column text-white h-100 py-5 classRule-iwk7so">
+                                                <li id="iwylau" draggable="true" data-highlightable="1"
+                                                        statype="offcanvas-body--item"
+                                                        target_page="648837ef1dca8323294f3772"
+                                                        class="nav-item nav-link pointer offcanvas-body--item classRule-iwylau">
+                                                        <a id="ivt7uo" draggable="true" data-highlightable="1"
+                                                                class="d-flex align-items-center justify-content-end text-white classRule-ivt7uo"><span
+                                                                        id="ij17ik" draggable="true"
+                                                                        data-highlightable="1"
+                                                                        class="classRule-ij17ik">Μήνες</span><i
+                                                                        id="i92963" draggable="true"
+                                                                        data-highlightable="1"
+                                                                        class="bi bi-calendar-fill mx-5 classRule-i92963"></i></a>
+                                                </li>
+                                                <li id="iuj19x" draggable="true" data-highlightable="1"
+                                                        statetype="offcanvas-body--item"
+                                                        target_page="6486bc2f969cf99eb9540096"
+                                                        class="nav-item nav-link pointer offcanvas-body--item classRule-iuj19x">
+                                                        <a id="ivy46k" draggable="true" data-highlightable="1"
+                                                                class="d-flex align-items-center justify-content-end text-white classRule-ivy46k"><span
+                                                                        id="it5w1h" draggable="true"
+                                                                        data-highlightable="1"
+                                                                        class="classRule-it5w1h">Υπάλληλοι</span><i
+                                                                        id="incdhh" draggable="true"
+                                                                        data-highlightable="1"
+                                                                        class="bi bi-people-fill mx-5 classRule-incdhh"></i></a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div id="i2zgob" draggable="true" data-highlightable="1"
+                                        class="offcanvas-footer classRule-i2zgob"></div>
+                        </div>
+                        <div id="ib0yjs" draggable="true" data-highlightable="1"
+                                class="collapse navbar-collapse classRule-ib0yjs">
+                                <ul id="icrtz4" draggable="true" data-highlightable="1"
+                                        class="navbar-nav me-auto d-flex align-items-center justify-content-center classRule-icrtz4">
+                                        <li id="i8a6cm" draggable="true" data-highlightable="1" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                                                aria-controls="sidebar" class="nav-item fs-1 classRule-i8a6cm"><a
+                                                        id="ipqk4a" draggable="true" data-highlightable="1"
+                                                        class="pointer classRule-ipqk4a"><i id="ihdqlg" draggable="true"
+                                                                data-highlightable="1" classtype="text-green"
+                                                                class="bi bi-list text-green classRule-ihdqlg"></i></a>
+                                        </li>
+                                </ul>
+                                <ul id="i9jwvj" draggable="true" data-highlightable="1"
+                                        class="navbar-nav ms-auto d-flex align-items-center justify-content-center classRule-i9jwvj">
+                                        <li id="iuauhc" draggable="true" data-highlightable="1" href="#!"
+                                                class="nav-item nav-link classRule-iuauhc"><a id="ic7h5b"
+                                                        draggable="true" data-highlightable="1"
+                                                        class="navbar-brand classRule-ic7h5b"><img id="izrf48"
+                                                                draggable="true"
+                                                                src="https://vilabs.eu/vlb-uploads/2021/10/ViLabs-logo-transp.png"
+                                                                alt="Logo" width="150" height="75"
+                                                                class="img-fluid classRule-izrf48" /></a></li>
+                                </ul>
+                        </div>
+                </div>
+        </nav>
+        <div id="iaeji" annotationname="getUser" class="container p-3 classRule-iaeji">
+                <div id="i1t9b" class="classRule-i1t9b"></div>
+                <div id="ip49z" class="classRule-ip49z">
+
+                </div>
+                <div id="iwq7i" class="container classRule-iwq7i">
+                        <div dataitems="getAllCards" id="iz2vj"
+                                class="row col-12 justify-content-between align-items-start classRule-iz2vj">
+                                <div dataitem="true" id="iodsq" class="col-12 classRule-iodsq">
+                                        <div classtype="leftbar-container" id="i0avf"
+                                                class="leftbar-container text-white classRule-i0avf">
+                                                <div id="iw9bw" class="body classRule-iw9bw">
+                                                        <ul id="imags"
+                                                                class="flex-column text-white fs-3 fw-bolder h-100 py-5 px-0 classRule-imags">
+                                                                <li href="#!" id="idt82"
+                                                                        class="nav-item nav-link pointer classRule-idt82">
+                                                                        <a id="i43kg"
+                                                                                class="d-flex align-items-center justify-content-center justify-content-md-end text-white classRule-i43kg"><span
+                                                                                        id="ivakn"
+                                                                                        annotationname="userName"
+                                                                                        class="classRule-ivakn">holo</span><span
+                                                                                        id="iwpyd"
+                                                                                        annotationname="userSurname"
+                                                                                        class="classRule-iwpyd">user</span><img
+                                                                                        src="https://i.ibb.co/S5wJS5j/d18c1521c859.png"
+                                                                                        alt="User Image" width="120"
+                                                                                        height="120" id="itkd5"
+                                                                                        class="rounded-circle d-none d-sm-block shadow mx-3 classRule-itkd5" /></a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div id="i18v2" annotationname="userProject" class="table-responsive classRule-i18v2">
+                        <table id="ika1t" class="table table-stripped2 table-border classRule-ika1t">
+                                <thead id="i5ykj" class="table-dark classRule-i5ykj">
+                                        <tr id="ij8zy" class="classRule-ij8zy">
+                                                <th id="i4azh" class="classRule-i4azh"><span id="i7qmx"
+                                                                class="horiz-center-item table-line-height classRule-i7qmx">Project</span>
+                                                </th>
+                                                <th id="ibxsw" class="classRule-ibxsw"><span id="i2k4y"
+                                                                class="horiz-center-item table-line-height classRule-i2k4y">Action</span>
+                                                </th>
+                                        </tr>
+                                </thead>
+                                <tbody dataitems="getAllRows" id="izwkg" class="classRule-izwkg">
+                                        <tr dataitem="true" id="if9jw" class="classRule-if9jw">
+                                                <td id="ilv6g" class="classRule-ilv6g"><span id="i6zsz"
+                                                                annotationname="projectName" transition-by-id
+                                                                target_page="64b7d0ee4363dc352c2487fe"
+                                                                class="horiz-center-item table-line-height classRule-i6zsz pointer">Cell</span>
+                                                </td>
+                                                <td id="ibf1j" class="space-around-elements classRule-ibf1j">
+                                                        <div id="i799k" transition-by-id
+                                                                target_page="64b7bace4363dc352c247ed2"
+                                                                class="btn pointer bi bi-pencil-square manage-btn classRule-i799k">
+                                                                 Manage</div>
+                                                        <div id="isush" target_page="-1"
+                                                                class="btn bi bi-trash delete-btn classRule-isush pointer">
+                                                                 Delete</div>
+                                                </td>
+                                        </tr>
+                                        <tr dataitem="true" id="ixt1yw" class="classRule-ixt1yw">
+                                                <td id="imrwf" class="classRule-imrwf"><span
+                                                                annotationname="projectName" transition-by-id
+                                                                target_page="64b7d0ee4363dc352c2487fe" id="iw253"
+                                                                class="horiz-center-item table-line-height pointer classRule-iw253">Cell</span>
+                                                </td>
+                                                <td id="icwk5w" class="space-around-elements classRule-icwk5w">
+                                                        <div transition-by-id target_page="64b7bace4363dc352c247ed2"
+                                                                id="isekcp"
+                                                                class="btn pointer bi bi-pencil-square manage-btn classRule-isekcp">
+                                                                 Manage</div>
+                                                        <div target_page="-1" id="iysspr"
+                                                                class="btn bi bi-trash delete-btn pointer classRule-iysspr">
+                                                                 Delete</div>
+                                                </td>
+                                        </tr>
+                                        <tr dataitem="true" id="iyo4q" class="classRule-iyo4q">
+                                                <td id="idfl1" class="classRule-idfl1"><span
+                                                                annotationname="projectName" transition-by-id
+                                                                target_page="64b7d0ee4363dc352c2487fe" id="i01w6"
+                                                                class="horiz-center-item table-line-height pointer classRule-i01w6">Cell</span>
+                                                </td>
+                                                <td id="ic1po" class="space-around-elements classRule-ic1po">
+                                                        <div transition-by-id target_page="64b7bace4363dc352c247ed2"
+                                                                id="ia8o9"
+                                                                class="btn pointer bi bi-pencil-square manage-btn classRule-ia8o9">
+                                                                 Manage</div>
+                                                        <div target_page="-1" id="imlzb"
+                                                                class="btn bi bi-trash delete-btn pointer classRule-imlzb">
+                                                                 Delete</div>
+                                                </td>
+                                        </tr>
+                                        <tr dataitem="true" id="idjc4" class="classRule-idjc4">
+                                                <td id="idfmc" class="classRule-idfmc"><span
+                                                                annotationname="projectName" transition-by-id
+                                                                target_page="64b7d0ee4363dc352c2487fe" id="i4kpu"
+                                                                class="horiz-center-item table-line-height pointer classRule-i4kpu">Cell</span>
+                                                </td>
+                                                <td id="i5qyc" class="space-around-elements classRule-i5qyc">
+                                                        <div transition-by-id target_page="64b7bace4363dc352c247ed2"
+                                                                id="ib0eb"
+                                                                class="btn pointer bi bi-pencil-square manage-btn classRule-ib0eb">
+                                                                 Manage</div>
+                                                        <div target_page="-1" id="iirfc"
+                                                                class="btn bi bi-trash delete-btn pointer classRule-iirfc">
+                                                                 Delete</div>
+                                                </td>
+                                        </tr>
+                                        <tr dataitem="true" id="iyhar" class="classRule-iyhar">
+                                                <td id="iqkca" class="classRule-iqkca"><span
+                                                                annotationname="projectName" transition-by-id
+                                                                target_page="64b7d0ee4363dc352c2487fe" id="idkfd"
+                                                                class="horiz-center-item table-line-height pointer classRule-idkfd">Cell</span>
+                                                </td>
+                                                <td id="ig63h" class="space-around-elements classRule-ig63h">
+                                                        <div transition-by-id target_page="64b7bace4363dc352c247ed2"
+                                                                id="ig71h"
+                                                                class="btn pointer bi bi-pencil-square manage-btn classRule-ig71h">
+                                                                 Manage</div>
+                                                        <div target_page="-1" id="ivk9t"
+                                                                class="btn bi bi-trash delete-btn pointer classRule-ivk9t">
+                                                                 Delete</div>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+        </div>
+        <script src="../dist/userProfile.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
